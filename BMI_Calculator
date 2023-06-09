@@ -8,16 +8,10 @@ const bmi = yourWeight / yourHeight**2;
 console.log(bmi);
 if (bmi <= 18.4)  {
     alert('underweight')
-} else {
-    if (bmi <= 24.9 && bmi>=18.5) {
-        alert('normal')
-    } else {
-        if (bmi <= 39.9 || bmi>=25) {
-            alert('overweight')
-        } else {
-            if (bmi>=40) {
-                alert('obese')
-            }
-        }
-    }
+} else if (bmi <= 24.9 && bmi>=18.5) {
+    alert('normal')
+} else if (bmi <= 39.9 || bmi>=25) {
+    alert('overweight')
+} else if (bmi>=40) {
+    alert('obese')
 };
